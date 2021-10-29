@@ -9,7 +9,7 @@ trait Stack[A] {
   def pop():A
 }
 class Generic extends Stack[Int] {
-  var stack:List[Int] = Nil
+  var stack:List[Int] = List()
 
   def isEmpty: Boolean = {
     if (stack==Nil) true
